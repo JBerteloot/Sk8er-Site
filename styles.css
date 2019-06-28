@@ -3,9 +3,7 @@ html {box-sizing:border-box}
 
 
 body{
-  
-
-  
+background: grey;
 }
 
 #wrapper {
@@ -23,6 +21,61 @@ ul{
   padding: 0;
 }
 
+.subs {
+  
+  border: solid purple;
+
+}
+  
+  nav {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid white;
+  align-items: flex-end;
+  
+}
+
+header div nav a {
+  color: yellow;
+  border: solid black;
+  
+}
+
+.social {
+  display:flex;
+  flex-direction: row;
+  text-decoration:none;
+  color: pink;
+  border: solid black;
+
+}
+
+.topmenu {
+  display:flex;
+  flex-direction: row;
+  justify-content: stretch;
+  text-decoration:none;
+  font-family:'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color:white;
+  text-transform: uppercase;
+  
+}
+
+.menuchoice {
+  background: rgb(171, 36, 41);
+  border-bottom: 3px solid rgba(139, 141, 140, 0.728);
+  padding: 10px 20px;
+  color:white;
+}
+
+.menuchoice a::before {
+  content: content " - ";
+}
+
+.menuchoice a::after {
+  content: content " - ";
+}
 
 .box {
   display: flex;
@@ -44,8 +97,6 @@ ul{
   padding-right: 5px;
   padding-left: 5px;
 }
-
-
 
 h2 {
   color: black;
