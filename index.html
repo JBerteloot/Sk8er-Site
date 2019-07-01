@@ -2,80 +2,179 @@
 
 <html>
   <head>
-    <title>Julie's Day 4</title>
+    <title>Julie - weekend 1</title>
     <link rel="stylesheet" type="text/css" href="styles.css" >
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c329a7eb8.js"></script>
+    
   </head>
 
   <body> 
     <div id="wrapper">
-      <!--ADD Inisde style="background-image:url('images/bg.jpg');"--> 
     <header>
-        <div class="subs">
-          <nav>
-            <a>Subscribe</a>
-        <ul class="social">
-            <li><a href="#"></a>FB</li>
-            <li><a href="#"></a>RSS</li>
-            <li><a href="#"></a>TW</li>
-            <li><a href="#"></a>YT</li>
-        </ul>
-      </nav>
-    </div>
-        <ul class="topmenu">
-          <li class="menuchoice"><a href="#"></a>Sk8t News</li>
-          <li class="menuchoice"><a href="#"></a>Skateboarders</li>
-          <li class="menuchoice"><a href="#"></a>Board Design</li>
-          <li class="menuchoice"><a href="#"></a>Contact Us</li>
-        </ul>
-      
-      <logo>
+      <!-- SUBSCRIBE ITEMS ##################### -->
+      <nav>
+        <section class="social">
+            <div>
+              <a href="#" id="subs">Subscribe</a >
+              </div>
+            <div>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            <div>
+                <i class="fab fa-facebook-square"></i>
+              </div>
+            <div>
+              <i class="fas fa-rss-square"></i>
+              </div>
+            <div>
+                <i class="fab fa-twitter-square"></i>
+              </div>
+            <div>
+                <i class="fab fa-youtube-square"></i>
+            </div>
+          </section>
+        </nav>
+
+        <!-- RED MENU ITEMS ##################### -->
+
+        <section>
+          <ul class="topmenu">
+            <li class="menuchoice">
+              <a href="#"></a> — Sk8t News   — </li>
+            <li class="menuchoice">
+              <a href="#"></a> — Skateboarders — </li>
+            <li class="menuchoice">
+              <a href="#"></a> — Board Design — </li>
+            <li class="menuchoice">
+              <a href="#"></a> — Contact Us — </li>
+            </ul>
+          </section>
+        <logo>
           <div class="stackedpic">
+        <img src="Images/grid.png" id="grid" >
         <img src="Images/peralta-logo.png" id="logo" alt="peralta-logo">
-        </div>
-      </logo>
-    </header>
+            </div>
+          </logo>
+      </header>
 
     <main>
-        <div class="box">
-          <section class="indivbox"> 
-            <span>
+      <!--3 ARTICLE COLUMNS ##################### -->
+
+      <div class="box">
+        <section class="indivbox"> 
+          <span>
             <h2> Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h2>
             <h3>October 10, 2013</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maxime. Tempora natus dolorum consectetur nulla voluptas, quos placeat deleniti quis ipsa eius atque doloribus earum corrupti. Ratione, nesciunt itaque? At!</p>
             </span>
-            <a href="">[ Read More ]</a>
+          <a href="">[ Read More ]</a>
           </section>  
 
-          <section class="indivbox"> 
-              <span>
-              <h2>Rodney Mullen" Pro an Ollie and innovate (Ted Talk)</h2>
-              <h3>March 10, 2013</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maxime. Tempora natus dolorum consectetur nulla voluptas, quos placeat deleniti quis ipsa eius atque doloribus earum corrupti. Ratione, nesciunt itaque? At!</p>
+        <section class="indivbox"> 
+          <span>
+            <h2>Rodney Mullen" Pro an Ollie and innovate (Ted Talk)</h2>
+            <h3>March 10, 2013</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maxime. Tempora natus dolorum consectetur nulla voluptas, quos placeat deleniti quis ipsa eius atque doloribus earum corrupti. Ratione, nesciunt itaque? At!</p>
             </span>
-              <a href="">[ Read More ]</a>
+          <a href="">[ Read More ]</a>
           </section>  
 
-            <section class="indivbox"> 
-              <span>
-                <h2>Ray Barbee Talks 'Ban This'</h2>
-                <h3>October 10, 2013</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maxime. Tempora natus dolorum consectetur nulla voluptas, quos placeat deleniti quis ipsa eius atque doloribus earum corrupti. Ratione, nesciunt itaque? At!</p>
-              </span>
-                <a href="">[ Read More ]</a>
-              </section> 
+        <section class="indivbox"> 
+          <span>
+            <h2>Ray Barbee Talks 'Ban This'</h2>
+            <h3>October 10, 2013</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maxime. Tempora natus dolorum consectetur nulla voluptas, quos placeat deleniti quis ipsa eius atque doloribus earum corrupti. Ratione, nesciunt itaque? At!</p>
+            <br>
+            </span>
+          <a href="" id="readmorethree">[ Read More ]</a>
+          </section> 
         </div>
 
+          <!--CAROUSSEL #####################-->
 
-      <section>
+        <div class="caroussel">
+          <input type=radio id="caroussel1">
+          <input type=radio id="caroussel2">
+          <input type=radio id="caroussel3">
+        </div>
 
-      </section>
+          <!--PICTURE PUZZLE #####################-->
 
-    </main>
+        <section id="boxes">
+          <section class="puzzle">
+            <div id="one">
+              <section class="center">Lance Mountain</section>
+              </div>
+            </section>
+           <section class="puzzle">
+              <div id="two">
+                <section class="center">Rodney Mullen</section>
+                </div>
+            </section>
+          <section class="puzzle">
+              <div id="three">
+                <section class="center">Steve Caballero</section>
+                </div>
+            </section>
+          <section class="puzzle">
+              <div id="four">
+                <section class="center" id="classfour">Tommy Guerrero</section>
+              </div>
+            </section>
+          </section>
 
-  <footer>
-  </footer>
+          <!-- SKATEBOARDS PICTURES ##################### -->
+      
+        <div id="whitebox">
+            <section>
+             <img src="Images/sk8-3.png">
+             <img src="Images/sk8-4.png">
+             <img src="Images/sk8-5.png">
+             <img src="Images/sk8-6.png">
+             <img src="Images/sk8-7.png">
+             <img src="Images/sk8-8.png">
+             <img src="Images/sk8-9.png">
+             <img src="Images/sk8-10.png">
+             <img src="Images/sk8-2.png">
+             <img src="Images/sk8-1.png">
+              </section>
+          </div>
+      </main>
 
-</div>
-</body>
-</html>
+      <!-- FOOTER ##################### -->
+    <footer>
+
+      <!-- CONTACT US FORM ##################### -->
+      <form>
+        <fieldset id="message">
+          <h4>Contact Us for More Information</h4>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem placeat blanditiis nam nulla consectetur hic commodi eos libero! Maiores odio distinctio sint magni pariatur perferendis illo. Tempora, quam nobis.</h5>
+          <div class="greysocial">
+            <div>
+              <i class="fab fa-facebook-square" id="fb"></i>
+             </div>
+            <div>
+             <i class="fas fa-rss-square" id="rss"></i>
+             </div>
+            <div>
+              <i class="fab fa-twitter-square" id="tw"></i>
+              </div>
+            <div>
+              <i class="fab fa-youtube-square" id="yt"></i>
+             </div>
+            </div>
+          </fieldset>
+
+        <fieldset id="fields">
+          <br>
+          <input type="text" name="name" placeholder="Name">
+          <br>
+          <input type="email" name="email" placeholder="Email">
+          <br>
+          <textarea text="text" name="message" placeholder="Your Message" row="15"></textarea>
+          <button type="text" value="Submit">Submit</button>
+          </fieldset>
+        </form>
+      </footer>
+    </div>

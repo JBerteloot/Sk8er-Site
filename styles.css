@@ -3,17 +3,17 @@ html {box-sizing:border-box}
 
 
 body{
-background: grey;
+  background-image: url("images/bg.jpg");
+  background-size: 160%
 }
 
 #wrapper {
-  width: 800px;
-  margin: auto;
   display: flex;
+  flex-direction: column;
+  margin: auto;
   justify-content: center;
   flex-wrap: wrap;
-
-  /*background-image: url("images/bg.jpg");*/
+  width: 1000px;
 }
 
 ul{ 
@@ -21,95 +21,158 @@ ul{
   padding: 0;
 }
 
-.subs {
-  
-  border: solid purple;
-
-}
-  
-  nav {
+header {
   display: flex;
   flex-direction: column;
-  border: 3px solid white;
-  align-items: flex-end;
-  
+  margin: auto;
+  width: 100%;
 }
 
-header div nav a {
-  color: yellow;
-  border: solid black;
-  
-}
+    /* ///// SUBSCRIBE ITEMS ///// */
 
 .social {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  text-decoration:none;
-  color: pink;
-  border: solid black;
-
+  align-items: center;
+  float: right;
+  margin-bottom: 50px;
 }
+
+section div a {
+  font-family:'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-right: 140px;
+  color: rgb(254, 254, 254);
+}
+
+section div a:after {
+  content: "•";
+  padding-left: 10px;
+}
+
+.fab, .fas {
+  padding: 5px;
+  font-size: 50px;
+}
+
+.fa-facebook-square {
+  color: #000066;
+}
+
+.fa-twitter-square {
+  color: rgb(95, 130, 192);
+}
+
+.fa-rss-square {
+  color: rgb(197, 132, 44);
+}
+
+.fa-youtube-square {
+  color: rgb(169, 49, 40);
+}
+
+.fa-ellipsis-v {
+  font-size: 30px;
+  color: grey;
+  margin-top: 5px;
+}
+
+    /* ///// RED MENU ITEMS ///// */
 
 .topmenu {
   display:flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: space-between;
   text-decoration:none;
   font-family:'Raleway', Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  color:white;
-  text-transform: uppercase;
-  
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase; 
 }
 
 .menuchoice {
   background: rgb(171, 36, 41);
   border-bottom: 3px solid rgba(139, 141, 140, 0.728);
-  padding: 10px 20px;
   color:white;
+  padding: 10px 42px;
 }
 
-.menuchoice a::before {
-  content: content " - ";
+main {
+  display: flex;
+  flex-direction: column;
+  margin:auto;
 }
 
-.menuchoice a::after {
-  content: content " - ";
+    /* ///// STACKED IMAGES ///// */
+
+.stackedpic {
+  display: flex;
+  justify-content: center;
+  border: 10px solid white;
+  margin: auto;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  background-image: url("images/top-image.png");
+  position: relative;
+  background-size:cover;
+  background-position: 40% -135%;
+  background-size: 170%;
+  z-index: -2;
 }
+
+#grid { 
+  z-index: -1;
+  width: 100%;  
+  opacity: 0.5;
+}
+
+#logo {
+  z-index: 0;
+  position: absolute;
+  width: 370px;
+  top: 23%;
+  bottom: 50%;
+  left: 1%;
+}
+
+    /* ///// ARTICLES ///// */
 
 .box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  border: solid grey;
-  width: 500px;
-  margin: 20px;
+  justify-content: space-between ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .indivbox {
   display: flex;
   flex-direction: column;
-  align-items: space-around;
   background: white;
   font-family: 'Lato', sans-serif;
-  width: 170px;
-  padding-right: 5px;
-  padding-left: 5px;
+  height: 400px;
+  width: 323px; 
+  padding-right: 20px;
+  padding-left: 25px;
 }
 
 h2 {
   color: black;
-  font-size: 12px;
+  font-size: 26px;
 }
 
 h3 {
   color: grey;
-  font-size: 10px;
+  font-size: 20spx;
 }
 
 p {
-  font-size: 8px;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 section a {
@@ -119,27 +182,221 @@ section a {
   padding-bottom: 10px;
   text-decoration: none;
   margin: auto;
-  /* NEED TO ALIGN THE READ MORE ELEMENTS */
 }
 
-.stackedpic {
+    /* ///// CAROUSSEL ///// */
+
+.caroussel {
   display: flex;
-  justify-content: center;
-  border: solid white;
-  width: 500px;
-  height: 170px;
-  margin: auto;
-  background-image: url("images/top-image.png");
-  position: relative;
-  background-size:cover;
-  background-position: 25% -135%;
+  flex-direction: row;
+  justify-content: center;  
+  padding-top: 15px;
+  padding-bottom: 15PX;
+}
+
+#caroussel1, #caroussel2, #caroussel3 {
+  font-size: 15px;
+  width: 35px;
+}
+
+    /* ///// PUZZLE ///// */
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.puzzle {
+  width: 330px;
+  height: 250px;
+  float:left;
+}
+
+.puzzle div {
+  border: 5px solid white;
+  color:white;
+  height:100%;
+  width:100%;
+  background-repeat: none;
+  background-origin: content-box;
+  background-size: cover;
+}
+
+.puzzle:nth-child(1) {
+  padding-right: px;
+  padding-bottom: 7px;
+}
+
+#one {
+  background-image: url("images/sk8er-4.png");
+  background-size: 140%;
+  background-position: 100% 40%;
+}
+
+.puzzle:nth-child(2) {
+  padding-right: 7px;
+  padding-bottom: 7px;
+  margin-right: 330px;
+}
+
+#two {
+  background-image: url("images/sk8er-3.png");
   background-size: 140%;
 }
 
-#logo {
-  position: absolute;
-  width: 220px;
-  top: 10%;
-  bottom: 50%;
-  left: 1%;
+.puzzle:nth-child(3) {
+  width: 662px;
+}
+
+#three {
+  background-image: url("images/sk8er-1.png");
+  background-size: 110%;
+  background-position: 0 60%;
+  
+}
+.puzzle:nth-child(4) {
+  height: 500px;
+  margin-top:-250px;
+}
+
+#four {
+  background-image: url("images/sk8er-2.png");
+  background-size: 280%;
+  background-position: 81% 60%;
+}
+
+.center {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: -3px;
+  text-align: center;
+  margin-top: 15%;
+}
+
+#classfour {
+  margin-top: 60%;
+}
+
+    /* ///// SKATEBOARDS PICTURES ///// */
+
+#whitebox {
+  background-color: white;
+  padding: 20px 30px;
+  width: 1000px;
+  margin: auto;
+}
+
+#whitebox section {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+    /* ///// FOOTER ///// */
+
+footer {
+  padding-top: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+    /* ///// CONTACT US FORM ///// */
+
+form {
+  height: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: rgb(254, 254, 254);
+  
+}
+
+fieldset {
+  display: flex;
+  align-items: flex-start;
+  background: rgb(254, 254, 254);
+  border: none; 
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+#message {
+  width: 500px;
+  color: rgb(62, 62, 59);
+}
+
+h4 {
+  font-size: 24px;
+  padding-bottom: 0px;
+}
+
+h5 {
+  padding-top: 0;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.greysocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#fb, #rss, #tw, #yt {
+  font-size: 30px;
+  color: grey;
+}
+
+#fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+}
+
+input {
+  width: 450px;
+  padding: 15px;
+  text-transform: uppercase;
+  outline: none;
+  border-top: 4px solid #b2b2b2;
+  border-left: 4px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  border-right: 1px solid #b2b2b2;
+  border-color: #b2b2b2;
+  font-size: 14px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+textarea { 
+  width: 450px;
+  height: 90px;
+  padding: 10px;
+  text-transform: uppercase;
+  outline: none;
+  border-top: 4px solid #b2b2b2;
+  border-left: 4px solid #b2b2b2;
+  border-color: #b2b2b2;
+  font-size: 14px;
+  color: rgb(183,183,183);
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color:rgb(167, 53, 52);
+  height: 35px;
+  width: 250px;
+  font-weight: lighter;
+  margin-left: 197px;
+  MARGIN-top: 35px;
+  font-size: 15px;
+  color: azure;
+  text-transform: uppercase;
+  outline: none;
+
 }
