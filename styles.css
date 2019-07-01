@@ -126,13 +126,13 @@ main {
 #grid { 
   z-index: -1;
   width: 100%;  
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 #logo {
   z-index: 0;
   position: absolute;
-  width: 370px;
+  width: 40%;
   top: 23%;
   bottom: 50%;
   left: 1%;
@@ -152,10 +152,11 @@ main {
 .indivbox {
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
   background: white;
   font-family: 'Lato', sans-serif;
-  height: 400px;
-  width: 323px; 
+  height: 30%;
+  width: 32%; 
   padding-right: 20px;
   padding-left: 25px;
 }
@@ -189,9 +190,10 @@ section a {
 .caroussel {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;  
-  padding-top: 15px;
-  padding-bottom: 15PX;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #caroussel1, #caroussel2, #caroussel3 {
@@ -308,13 +310,12 @@ footer {
     /* ///// CONTACT US FORM ///// */
 
 form {
-  height: 380px;
+  height: 30%;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   background: rgb(254, 254, 254);
-  
 }
 
 fieldset {
@@ -323,6 +324,7 @@ fieldset {
   background: rgb(254, 254, 254);
   border: none; 
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  background: rgb(254, 254, 254);
 }
 
 #message {
@@ -398,5 +400,65 @@ button {
   color: azure;
   text-transform: uppercase;
   outline: none;
+}
 
+  /* ///// SCREEN RESPONSIVENESS ///// */
+
+@media only screen and (max-width: 1000px) {
+  #wrapper {
+    width:100%;
+  }
+  
+  .social {
+    justify-content: space-between;
+  }
+
+  .topmenu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stackedpic {
+    margin: auto;
+    height: -20%;
+  }
+
+  .box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    size: 200%;
+  }
+
+  .indivbox, span {
+    flex-direction: column;  
+    justify-content: stretch;
+    background: white;
+    font-family: 'Lato', sans-serif;
+    height: auto;
+    width: auto; 
+    margin-bottom: 10px;
+  }
+
+  .caroussel {
+    display: none;
+  }
+
+  .boxes .puzzle {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer form {
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    background: none;
+  }
+  
+  #fields {
+    background: none;
+  }
 }
